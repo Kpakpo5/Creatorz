@@ -1,0 +1,51 @@
+@use 'src/styles/vars';
+@use 'sass:math';
+
+.categorycard {
+  width: calc(48% - #{math.div(vars.$gutter, 2)});
+  border-radius: 1rem;
+  border: 1px solid vars.$colorThree;
+  margin-top: vars.$gutter;
+  overflow: hidden;
+  text-align: center;
+
+  @media (max-width: vars.$medium) {
+    width: 100%;
+  }
+
+  &-content{
+    padding: math.div(vars.$gutter, 2);
+  }
+
+  &-description{
+    color: rgba(0,0,0,.4);
+    margin-bottom: math.div(vars.$gutter, 2);
+  }
+
+  &-link{
+    background-color: vars.$colorOne;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: math.div(vars.$gutter, 2);
+    border-radius: 3px;
+
+    &:hover {
+      background-color: vars.$colorThree;
+      color: black;
+    }
+  }
+
+  &-img{
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

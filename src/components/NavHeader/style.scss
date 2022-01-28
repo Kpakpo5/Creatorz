@@ -1,0 +1,23 @@
+@use 'src/styles/vars';
+@use 'sass:math';
+
+.menu{
+
+  &-link{
+    display: inline-block;
+    background-color: vars.$colorFour;
+    border-radius: 5px;
+    color: black;
+    padding: math.div(vars.$gutter, 1.5) math.div(vars.$gutter, 1);
+    margin: math.div(vars.$gutter, 5);
+
+    &:hover{
+      background-color: vars.$colorThree;
+      color: black;
+    }
+
+    &--active{
+      background-color: vars.$colorThree;
+    }
+  }
+}
