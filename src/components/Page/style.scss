@@ -1,0 +1,9 @@
+@use 'src/styles/vars';
+
+.page {
+  margin: vars.$gutter * 2;
+
+  @media (max-width: vars.$small) {
+    margin: vars.$gutter;
+  }
+}
