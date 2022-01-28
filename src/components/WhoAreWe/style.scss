@@ -1,0 +1,23 @@
+@use 'src/styles/vars';
+
+.badge{
+  border: solid;
+  display: flex;
+  border-radius: 0.5rem;
+  width: 30%;
+  margin-top: vars.$gutter;
+  &-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: vars.$gutter;
+    
+  }
+}
+
+.founders{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
