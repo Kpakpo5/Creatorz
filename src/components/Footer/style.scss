@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+@use 'sass:math';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: vars.$gutter;
+  border-top: thin solid grey;
+  
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: vars.$gutter;
+    
+  }
+
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+  }
+  &-link {
+    padding: vars.$gutter;
+    color: black;
+
+    &:hover {
+      color: vars.$colorOne;
+    }
+  }
+
+  &-copyright{
+    display: inline-block;
+    text-align: center;
+    padding: math.div(vars.$gutter, 2);
+    border-top: thin solid grey;
+  }
+}
