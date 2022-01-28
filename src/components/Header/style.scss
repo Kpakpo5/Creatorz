@@ -1,0 +1,46 @@
+@use 'src/styles/vars';
+@use 'sass:math';
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: vars.$gutter;
+  background-color: vars.$colorFour;
+  border-bottom: thin solid grey;
+
+  &-logo {
+    width: 130px;
+  }
+
+  &-button{
+    display: flex;
+    flex-direction: column;
+
+    & button {
+      padding: math.div(vars.$gutter, 1.5) math.div(vars.$gutter, 1);
+      background-color: vars.$colorOne;
+      border: thin solid vars.$colorOne;
+      border-radius: 5px;
+      font-family: vars.$font;
+      font-weight: bold;
+      color:vars.$colorThree;
+
+      &:first-child{
+        margin-bottom: vars.$gutter;
+      }
+
+      &:hover {
+        background-color: vars.$colorTwo;
+        border: thin solid vars.$colorTwo;
+        animation:2s ease-in;
+      }
+    }
+  }
+
+  &-title{
+    text-align: center;
+  }
+}
+
+
