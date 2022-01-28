@@ -1,0 +1,79 @@
+@use 'src/styles/vars';
+
+.inscription {
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: vars.$gutter;
+    width: 100%;
+    .field{
+      width: 50%;
+    }
+  }
+
+  &-button{
+    margin-right: vars.$gutter;
+    background-color: vars.$colorThree;
+    &:hover {
+      background-color: vars.$colorOne;
+      color: black;
+    }
+  }
+}
+
+.inscription-button{
+  margin-top: vars.$gutter;
+  border-radius: 1rem;
+  height: 2.5rem;
+  border: thin solid;
+  border-radius: 5px;
+  font-family: vars.$font;
+  font-weight: bold;
+}
+
+.back-button{
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: thin solid;
+  border-radius: 5px;
+  font-family: vars.$font;
+  font-weight: bold;
+  margin-left: vars.$gutter;
+  &:hover{
+    background-color: black;
+    color:white;
+  }
+}
+
+#avatar{
+  margin-left: vars.$gutter;
+  margin-top: vars.$gutter;
+}
+
+#logo{
+  margin-top: vars.$gutter;
+  margin-left: vars.$gutter;
+}
+
+#pictures{
+  margin-top: vars.$gutter;
+  margin-left: vars.$gutter;
+}
+
+.textarea{
+  width: 50%;
+  height: 5rem;
+  margin-top: vars.$gutter;
+  margin-bottom: vars.$gutter;
+}
+
+.page{
+  text-align: center;
+}
+
+.select{
+  width: 50%;
+}
